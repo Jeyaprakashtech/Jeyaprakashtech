@@ -49,11 +49,10 @@ AI-powered SaaS platform for generating images from text prompts.
 - Responsive dashboard
 
 🔗 Live Demo:
-LINK
+http://dreamrender-bx3hjg43g-jeyaprakashtechs-projects.vercel.app/
 
 🔗 Repository:
-LINK
-
+https://github.com/Jeyaprakashtech/DreamRender
 ---
 
 ### HINATA
@@ -68,13 +67,13 @@ Browser-based AI Voice Assistant supporting speech and text interactions.
 - Responsive Interface
 
 🔗 Repository:
-LINK
+https://github.com/Jeyaprakashtech/Hinata-AI-Voice-Assistant
 
 ---
 
 ## 📊 GitHub Stats
 
-(Add GitHub Readme Stats here)
+[![Jeyaprakash's GitHub stats](https://github-stats-extended.vercel.app/api?username=anuraghazra)](https://github.com/stats-organization/github-stats-extended)
 
 ---
 
@@ -91,10 +90,10 @@ LINK
 ## 📫 Connect With Me
 
 Portfolio:
-https://yourportfolio.com
+https://jeyaprakash-portfolio-three.vercel.app/
 
 LinkedIn:
-https://linkedin.com/in/...
+https://linkedin.com/in/jeyaprakash-s-dev
 
 Email:
-your@email.com
+jeyaprakash2630@email.com
