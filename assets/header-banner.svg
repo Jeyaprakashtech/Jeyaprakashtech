@@ -1,0 +1,103 @@
+<svg width="900" height="220" viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1E3D">
+        <animate attributeName="stop-color" values="#0B1E3D;#122a52;#0B1E3D" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#152A54">
+        <animate attributeName="stop-color" values="#152A54;#1E3A6E;#152A54" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#0B1E3D">
+        <animate attributeName="stop-color" values="#0B1E3D;#0d234a;#0B1E3D" dur="6s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="sheen" x1="-20%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#60A5FA" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#2563EB" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="-300 0" to="1200 0" dur="4s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <clipPath id="cardClip">
+      <rect x="0" y="0" width="900" height="220" rx="14"/>
+    </clipPath>
+
+    <clipPath id="typeClip1">
+      <rect x="0" y="0" width="0" height="40">
+        <animate attributeName="width" from="0" to="560" begin="0.3s" dur="1.6s" fill="freeze" calcMode="spline" keySplines="0.25 1 0.5 1"/>
+      </rect>
+    </clipPath>
+
+    <clipPath id="typeClip2">
+      <rect x="0" y="0" width="0" height="30">
+        <animate attributeName="width" from="0" to="620" begin="1.9s" dur="2s" fill="freeze" calcMode="spline" keySplines="0.25 1 0.5 1"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#cardClip)">
+    <rect x="0" y="0" width="900" height="220" fill="url(#bgGrad)"/>
+    <rect x="0" y="0" width="900" height="220" fill="url(#sheen)"/>
+
+    <!-- floating particles -->
+    <circle cx="80" cy="180" r="2.5" fill="#60A5FA" opacity="0.6">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -140; 0 0" dur="9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.7;0" dur="9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="180" cy="200" r="1.8" fill="#93C5FD" opacity="0.5">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -170; 0 0" dur="11s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0" dur="11s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="760" cy="190" r="2.2" fill="#2563EB" opacity="0.6">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -150; 0 0" dur="8s" begin="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.7;0" dur="8s" begin="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="840" cy="170" r="1.6" fill="#60A5FA" opacity="0.5">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -120; 0 0" dur="7s" begin="0.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0" dur="7s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="450" cy="205" r="1.5" fill="#93C5FD" opacity="0.4">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -160; 0 0" dur="10s" begin="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.5;0" dur="10s" begin="3s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- subtle grid -->
+    <g stroke="#2563EB" stroke-opacity="0.08">
+      <line x1="0" y1="55" x2="900" y2="55"/>
+      <line x1="0" y1="110" x2="900" y2="110"/>
+      <line x1="0" y1="165" x2="900" y2="165"/>
+    </g>
+
+    <!-- name -->
+    <text x="60" y="95" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="40" font-weight="700" fill="#F8FAFC">
+      Jeyaprakash S
+      <animate attributeName="opacity" from="0" to="1" begin="0s" dur="0.8s" fill="freeze"/>
+    </text>
+
+    <!-- typed line 1 -->
+    <g clip-path="url(#typeClip1)">
+      <text x="60" y="130" font-family="Consolas, Menlo, monospace" font-size="19" fill="#93C5FD">
+        Full-Stack Software Engineer — Backend · UI · Security
+      </text>
+    </g>
+    <rect x="60" y="112" width="2" height="22" fill="#60A5FA">
+      <animate attributeName="x" from="60" to="620" begin="0.3s" dur="1.6s" fill="freeze" calcMode="spline" keySplines="0.25 1 0.5 1"/>
+      <animate attributeName="opacity" values="1;0;1" dur="0.8s" begin="0.3s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- typed line 2 -->
+    <g clip-path="url(#typeClip2)">
+      <text x="60" y="165" font-family="Consolas, Menlo, monospace" font-size="15" fill="#CBD5E1">
+        Ships production systems that real businesses run on.
+      </text>
+    </g>
+
+    <!-- top accent bar -->
+    <rect x="0" y="0" width="900" height="4" fill="#2563EB">
+      <animate attributeName="width" from="0" to="900" begin="0s" dur="1s" fill="freeze"/>
+    </rect>
+  </g>
+
+  <rect x="0.5" y="0.5" width="899" height="219" rx="14" fill="none" stroke="#2563EB" stroke-opacity="0.35"/>
+</svg>
