@@ -1,77 +1,47 @@
-<svg width="900" height="220" viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0B1E3D">
-        <animate attributeName="stop-color" values="#0B1E3D;#122a52;#0B1E3D" dur="6s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="50%" stop-color="#152A54">
-        <animate attributeName="stop-color" values="#152A54;#1E3A6E;#152A54" dur="6s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" stop-color="#0B1E3D">
-        <animate attributeName="stop-color" values="#0B1E3D;#0d234a;#0B1E3D" dur="6s" repeatCount="indefinite"/>
-      </stop>
-    </linearGradient>
+<svg width="1200" height="320" viewBox="0 0 1200 320" xmlns="http://www.w3.org/2000/svg">
+  <!-- flat background, no gradient-stop animation -->
+  <rect x="0" y="0" width="1200" height="320" rx="20" fill="#0B1E3D"/>
 
-    <clipPath id="cardClip">
-      <rect x="0" y="0" width="900" height="220" rx="14"/>
-    </clipPath>
-  </defs>
+  <!-- soft glow blobs, decorative, drifting slowly -->
+  <circle cx="1020" cy="60" r="140" fill="#2563EB" opacity="0.18">
+    <animateTransform attributeName="transform" type="translate" values="0 0; -20 20; 0 0" dur="14s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="120" cy="280" r="110" fill="#60A5FA" opacity="0.12">
+    <animateTransform attributeName="transform" type="translate" values="0 0; 20 -15; 0 0" dur="16s" begin="1s" repeatCount="indefinite"/>
+  </circle>
 
-  <g clip-path="url(#cardClip)">
-    <rect x="0" y="0" width="900" height="220" fill="url(#bgGrad)"/>
+  <!-- drifting particles -->
+  <circle cx="900" cy="230" r="2.5" fill="#60A5FA" opacity="0.5">
+    <animateTransform attributeName="transform" type="translate" values="0 0; 0 -100; 0 0" dur="9s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="960" cy="270" r="1.8" fill="#93C5FD" opacity="0.4">
+    <animateTransform attributeName="transform" type="translate" values="0 0; 0 -80; 0 0" dur="11s" begin="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1080" cy="200" r="2" fill="#2563EB" opacity="0.5">
+    <animateTransform attributeName="transform" type="translate" values="0 0; 0 -90; 0 0" dur="8s" begin="2.2s" repeatCount="indefinite"/>
+  </circle>
 
-    <!-- floating particles: purely decorative, safe to fail -->
-    <circle cx="80" cy="180" r="2.5" fill="#60A5FA" opacity="0.5">
-      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -140; 0 0" dur="9s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;0.6;0" dur="9s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="180" cy="200" r="1.8" fill="#93C5FD" opacity="0.4">
-      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -170; 0 0" dur="11s" begin="1s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;0.5;0" dur="11s" begin="1s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="760" cy="190" r="2.2" fill="#2563EB" opacity="0.5">
-      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -150; 0 0" dur="8s" begin="2s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;0.6;0" dur="8s" begin="2s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="840" cy="170" r="1.6" fill="#60A5FA" opacity="0.4">
-      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -120; 0 0" dur="7s" begin="0.5s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;0.5;0" dur="7s" begin="0.5s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="450" cy="205" r="1.5" fill="#93C5FD" opacity="0.3">
-      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -160; 0 0" dur="10s" begin="3s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;0.4;0" dur="10s" begin="3s" repeatCount="indefinite"/>
-    </circle>
+  <!-- top accent line: visible by default, width animates as a bonus -->
+  <rect x="0" y="0" width="1200" height="4" fill="#2563EB"/>
 
-    <!-- subtle grid -->
-    <g stroke="#2563EB" stroke-opacity="0.08">
-      <line x1="0" y1="55" x2="900" y2="55"/>
-      <line x1="0" y1="110" x2="900" y2="110"/>
-      <line x1="0" y1="165" x2="900" y2="165"/>
-    </g>
+  <!-- name: visible by default (opacity 1), animation only adds a rise-in on top -->
+  <text x="70" y="150" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="700" fill="#F8FAFC">
+    Jeyaprakash S
+    <animateTransform attributeName="transform" type="translate" values="0 16; 0 0" dur="0.9s" fill="freeze"/>
+  </text>
 
-    <!-- name: always visible, no animation gating it -->
-    <text x="60" y="105" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="40" font-weight="700" fill="#F8FAFC">
-      Jeyaprakash S
-    </text>
+  <!-- tagline: visible by default, opacity animates in on top from a non-zero floor -->
+  <text x="70" y="200" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#93C5FD">
+    Full-Stack Software Engineer - Backend . UI . Security
+    <animate attributeName="opacity" values="0.15;1" dur="1.1s" begin="0.3s" fill="freeze"/>
+  </text>
 
-    <!-- subtitle line 1: always visible -->
-    <text x="60" y="140" font-family="Consolas, Menlo, Courier New, monospace" font-size="19" fill="#93C5FD">
-      Full-Stack Software Engineer — Backend · UI · Security
-    </text>
+  <!-- sub-tagline -->
+  <text x="70" y="234" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#CBD5E1">
+    Shipping production software real businesses run on.
+    <animate attributeName="opacity" values="0.15;1" dur="1.1s" begin="0.6s" fill="freeze"/>
+  </text>
 
-    <!-- subtitle line 2: always visible -->
-    <text x="60" y="170" font-family="Consolas, Menlo, Courier New, monospace" font-size="15" fill="#CBD5E1">
-      Ships production systems that real businesses run on.
-    </text>
-
-    <!-- blinking cursor: decorative, safe to fail -->
-    <rect x="565" y="157" width="2" height="18" fill="#60A5FA">
-      <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.49;0.5;0.99;1" dur="1s" repeatCount="indefinite"/>
-    </rect>
-
-    <!-- top accent bar: static fallback color, animated width as a bonus -->
-    <rect x="0" y="0" width="900" height="4" fill="#2563EB"/>
-  </g>
-
-  <rect x="0.5" y="0.5" width="899" height="219" rx="14" fill="none" stroke="#2563EB" stroke-opacity="0.35"/>
+  <!-- border -->
+  <rect x="1" y="1" width="1198" height="318" rx="20" fill="none" stroke="#2563EB" stroke-opacity="0.35"/>
 </svg>
