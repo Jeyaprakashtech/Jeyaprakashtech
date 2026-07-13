@@ -1,9 +1,8 @@
 <div align="center">
 
-# Jeyaprakash S
-### Full-Stack Software Engineer — Backend Systems · Product UI · Applied Security
+<img src="assets/header-banner.svg" alt="Jeyaprakash S — Full-Stack Software Engineer" width="100%"/>
 
-**I ship production software that real businesses run on** — from schema design to deployed UI — and I care as much about whether it's *correct under load* as whether it *feels good to use*.
+<br><br>
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-000?style=for-the-badge&logo=vercel&logoColor=white)](https://jeyaprakash-portfolio-three.vercel.app/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/jeyaprakash-s-dev)
@@ -11,6 +10,10 @@
 [![Open to Work](https://img.shields.io/badge/Open%20to%20Work-success?style=for-the-badge)](mailto:jeyaprakash2630@email.com)
 
 </div>
+
+<br>
+
+<img src="assets/divider.svg" width="100%" height="4"/>
 
 <br>
 
@@ -132,9 +135,19 @@ A browser-based voice assistant with real-time speech-to-text and text-to-speech
 
 ---
 
-## 📊 GitHub Stats
+## 📊 Live GitHub Activity
 
-[![Jeyaprakash's GitHub stats](https://github-stats-extended.vercel.app/api?username=Jeyaprakashtech)](https://github.com/stats-organization/github-stats-extended)
+*Self-hosted, not a third-party widget — this card is generated fresh every day by a GitHub Action in this repo and committed straight into it, so it never shows zeros from someone else's rate limit again.*
+
+<div align="center">
+
+<img src="assets/stats-card.svg" alt="Live GitHub stats" width="480"/>
+
+<br><br>
+
+<img src="https://raw.githubusercontent.com/Jeyaprakashtech/Jeyaprakashtech/output/snake.svg" alt="Contribution snake animation" width="100%"/>
+
+</div>
 
 ---
 
