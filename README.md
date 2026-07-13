@@ -145,7 +145,7 @@ A browser-based voice assistant with real-time speech-to-text and text-to-speech
 
 <br><br>
 
-<img src="https://raw.githubusercontent.com/Jeyaprakashtech/Jeyaprakashtech/output/snake.svg" alt="Contribution snake animation" width="100%"/>
+<img src="assets/contribution-graph.svg" alt="Themed contribution graph" width="100%"/>
 
 </div>
 
